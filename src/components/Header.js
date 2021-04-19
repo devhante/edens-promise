@@ -1,24 +1,20 @@
+import './Header.css';
 import React from 'react';
-import styled from 'styled-components';
+import { useDispatch, useSelector } from 'react-redux';
+import { setTitle } from 'modules/root';
 
-const Root = styled.div`
-  height: 4rem;
-  background-color: #efbbcf;
-  box-shadow: 0 0.1875rem 0.385rem rgba(0, 0, 0, 0.16);
-`;
+function Header() {
+  const { title } = useSelector((state) => ({
+    title: state.root.title
+  }));
 
-const Title = styled.div`
-  color: #8675a9;
-  font-size: 3rem;
-  font-weight: bold;
-  text-align: center;
-`;
+  const dispatch = useDispatch();
+  const onSetTitle = () => dispatch(setTitle());
 
-function Header({ title, onSetTitle }) {
   return (
-    <Root>
-      <Title>{title}</Title>
-    </Root>
+    <div className="Header">
+      <div className="title">{title}</div>
+    </div>
   );
 }
 

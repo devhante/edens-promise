@@ -1,10 +1,13 @@
+import './App.css';
 import React from 'react';
-import HeaderContainer from 'components/HeaderContainer';
+import Header from 'components/Header';
+import Contents from 'components/Contents';
 
 function App() {
   return (
     <div className="App">
-      <HeaderContainer />
+      <Contents />
+      <Header />
     </div>
   );
 }

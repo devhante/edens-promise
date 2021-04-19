@@ -1,0 +1,16 @@
+.Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4rem;
+  background-color: #EFBBCF;
+  box-shadow: 0 0.1875rem 0.385rem rgba(0, 0, 0, 0.16);
+}
+
+.Header .title {
+  color: #8675A9;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
