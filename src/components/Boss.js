@@ -1,11 +1,13 @@
 import './Boss.css';
 import React from 'react';
-import Boss_E9 from 'resources/boss_e9.png';
+import E9_Boss from 'resources/e9_boss.png';
+import E9_BossGreen from 'resources/e9_bossgreen.png';
 
-function Boss() {
+function Boss({ position }) {
+  const image = position === 'center' ? E9_Boss : E9_BossGreen;
   return (
-    <div className="Boss">
-      <img src={Boss_E9} alt="Boss" />
+    <div className={`Boss ${position}`}>
+      <img src={image} alt="Boss" />
     </div>
   );
 }

@@ -1,10 +1,61 @@
 .Boss {
   position: absolute;
-  width: 150px;
-  height: 150px;
+  width: 125px;
+  height: 125px;
+}
+
+.Boss.center {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.Boss.top {
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+
+.Boss.bottom {
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 100%) rotate(180deg);
+}
+
+.Boss.left {
+  top: 50%;
+  left: 0%;
+  transform: translate(-100%, -50%) rotate(270deg);
+}
+
+.Boss.right {
+  top: 50%;
+  right: 0%;
+  transform: translate(100%, -50%) rotate(90deg);
+}
+
+.Boss.topLeft {
+  top: 0%;
+  left: 0%;
+  transform: translate(-100%, -100%) rotate(315deg);
+}
+
+.Boss.topRight {
+  top: 0%;
+  right: 0%;
+  transform: translate(100%, -100%) rotate(45deg);
+}
+
+.Boss.bottomLeft {
+  bottom: 0%;
+  left: 0%;
+  transform: translate(-100%, 100%) rotate(225deg);
+}
+
+.Boss.bottomRight {
+  bottom: 0%;
+  right: 0%;
+  transform: translate(100%, 100%) rotate(135deg);
 }
 
 .Boss img {
