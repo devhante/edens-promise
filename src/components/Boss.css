@@ -10,6 +10,34 @@
   transform: translate(-50%, -50%);
 }
 
+.Boss.center.gaze-bottomLeft {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.Boss.center.gaze-left {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.Boss.center.gaze-topLeft {
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.Boss.center.gaze-top {
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.Boss.center.gaze-topRight {
+  transform: translate(-50%, -50%) rotate(225deg);
+}
+
+.Boss.center.gaze-right {
+  transform: translate(-50%, -50%) rotate(270deg);
+}
+
+.Boss.center.gaze-bottomRight {
+  transform: translate(-50%, -50%) rotate(315deg);
+}
+
 .Boss.top {
   top: 0%;
   left: 50%;
@@ -35,26 +63,26 @@
 }
 
 .Boss.topLeft {
-  top: 0%;
-  left: 0%;
+  top: 5%;
+  left: 5%;
   transform: translate(-100%, -100%) rotate(315deg);
 }
 
 .Boss.topRight {
-  top: 0%;
-  right: 0%;
+  top: 5%;
+  right: 5%;
   transform: translate(100%, -100%) rotate(45deg);
 }
 
 .Boss.bottomLeft {
-  bottom: 0%;
-  left: 0%;
+  bottom: 5%;
+  left: 5%;
   transform: translate(-100%, 100%) rotate(225deg);
 }
 
 .Boss.bottomRight {
-  bottom: 0%;
-  right: 0%;
+  bottom: 5%;
+  right: 5%;
   transform: translate(100%, 100%) rotate(135deg);
 }
 

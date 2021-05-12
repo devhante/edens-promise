@@ -1,0 +1,20 @@
+.Footer {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4rem;
+  background-color: #EFBBCF;
+
+  color: #8675A9;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.Footer div {
+  flex-grow: 1;
+  text-align: center;
+}
