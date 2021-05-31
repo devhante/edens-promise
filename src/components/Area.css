@@ -3,15 +3,12 @@
 }
 
 .Area path {
-  fill: transparent
+  fill: transparent;
+  cursor: pointer;
 }
 
 .Area path:hover {
   fill: rgba(255,255,255,0.3);
-}
-
-.Area path.green {
-  fill: rgba(0, 255, 0, 0.25);
 }
 
 .Area path.red {
